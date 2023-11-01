@@ -3,59 +3,73 @@
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKDM1650TW"></script>
-    <script>
-     window.dataLayer = window.dataLayer || [];
+     <script>
+    window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-JKDM1650TW');
     </script>
-<title>호로록</title>
-<meta charset="utf-8">
+    <title>호로록</title>
+    <meta charset="utf-8">
+    <style>
+        #grid {
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            row-gap: 50px;
+            justify-content: center;
+            margin: auto;
+        }
+        .main {
+            text-align: center;
+        }
+        .text {
+            display: grid;
+            width: 500px;
+            align-items: start;
+            justify-content: center;
+            margin: auto;
+            margin-top: 0;
+        }
+        .main img {
+           width: 400px;
+           height: 500px;
+           margin: 10px 10px;
+        }
+        .title,.information,.explain {
+            font-size: 15px;
+        }
+        .title {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-<div style="text-align:center"><h1><a href="index.html"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><span class="material-symbols-outlined">
-    local_cafe
-    </span>호로록</a></h1></div>
-<table style="margin-left:auto;margin-right:auto">
-    <tr>
-        <td><div style="margin-right:10px"><img src="도돌커피로스터스1.jpg" width="400px" height="500px"></div></td>
-        <td><div style="margin-right:10px"><img src="도돌커피로스터스2.jpg" width="400px" height="500px"></div></td>
-        <td><div style="margin-right:10px"><img src="도돌커피로스터스3.jpg" width="400px" height="500px"></div></td>
-        <td><div style="margin-right:10px"><img src="도돌커피로스터스4.jpg" width="400px" height="500px"></div></td>
-    </tr>
-</table>
-<table style="margin-left:auto;margin-right:auto;margin-top:100px;width:500px">
-    <tr>
-        <td><img src="도돌커피로스터스0.jpg" width="500px" height="700px"></td>
-    </tr>
-    <tr>
-        <td><p><strong>도돌커피로스터스</strong><p style="font-size:14px">📍창원 성산구 용호로 122<br>☕필터커피 6500원 라떼 5000원 초코아이스크림라떼 6500원<br>⏰월-일 11:00-21:30 (매달4번째 일요일 정기 휴무)</p>
-            <p style="font-size:14px">골목길에 들어서면 인테리어에 힘 좀 썼다! 하는 카페가 보인다.<br>차분하고 모던한 내부의 모습에 차가워 보일 수 있지만 유리창으로 들어오는 <br>가로수의 모습과 햇빛이 따스하다.</p>
-            <p style="font-size:14px">다양한 원두의 필터(드립) 커피가 있고 원두의 이름과 설명이 플로피디스크에 적혀있는 모습이 신선하다.<br>아쉽게도 오늘은 라떼와 초코아이스크림라떼를 주문했다.<p style="font-size:14px">라떼는 원두 자체가 맛있어서 그런지 향이 가득하고 약간의 산미와 함께 고소함이 깊다. 초코아이스크림라떼는 꾸덕하고 진한 아이스크림에 고소한 우유가 적절한 균형을 유지시켜준다. 당이 필요하다면 무조건 주문이다. 옥수수크림치즈머핀은 옥수수의 향이 가득한 고소하고 달달한 크림이 매력이다. 위에 올려진 옥수수랑 같이 먹으면 옥수수의 매력은 2배 더해진다. 부드러운 버터향의 머핀안에 숨어있는 크림치즈와 옥수수크림은 각각의 매력을 가득 담고있다.</p></p>
-        </td>
-    </tr>
-</table>
-<p>
-    <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://https-byeoreu-github-io-my-first-web-site.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
+<div id="grid">
+    <div class="main">
+        <h1>
+            <a href="index.html"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+            <span class="material-symbols-outlined">local_cafe</span>호로록</a>
+        </h1>
+        <div class="main img">
+            <img src="도돌커피로스터스1.jpg">
+            <img src="도돌커피로스터스2.jpg">
+            <img src="도돌커피로스터스3.jpg">
+            <img src="도돌커피로스터스4.jpg">
+        </div>
+    </div>
+    <div class="text">
+        <img src="도돌커피로스터스0.jpg" width="500px">
+        <p class="title">도돌커피로스터스</p>
+        <p class="information">
+            📍창원 성산구 용호로 122<br>☕필터커피 6500원 라떼 5000원 초코아이스크림라떼 6500원<br>⏰월-일 11:00-21:30 (매달4번째 일요일 정기 휴무)
+        </p>
+        <p class="explain">
+            골목길에 들어서면 인테리어에 힘 좀 썼다! 하는 카페가 보인다. <br>차분하고 모던한 내부의 모습에 차가워 보일 수 있지만 <br>유리창으로 들어오는 가로수의 모습과 햇빛이 따스하다.
+        </p>
+        <p class="explain">
+            다양한 원두의 필터(드립) 커피가 있고 원두의 이름과 설명이 <br>플로피디스크에 적혀있는 모습이 신선하다.<br>아쉽게도 오늘은 라떼와 초코아이스크림라떼를 주문했다.<br>라떼는 원두 자체가 맛있어서 그런지 향이 가득하고 <br>약간의 산미와 함께 고소함이 깊다. 초코아이스크림라떼는 꾸덕하고 진한 아이스크림에 고소한 우유가 적절한 균형을 유지시켜준다. <br>당이 필요하다면 무조건 주문이다. 옥수수크림치즈머핀은 옥수수의 향이 가득한 고소하고 달달한 크림이 매력이다. 위에 올려진 옥수수랑 같이 먹으면 옥수수의 매력은 2배 더해진다.<br>부드러운 버터향의 머핀안에 숨어있는 크림치즈와 옥수수크림은 <br>각각의 매력을 가득 담고있다.
+        </p>   
+    </div>
+</div>
 </body>
 </html>
