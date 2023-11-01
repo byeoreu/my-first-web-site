@@ -1,51 +1,93 @@
 <!doctype html>
 <html>
     <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKDM1650TW"></script>
-    <script>
-     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKDM1650TW"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-    gtag('config', 'G-JKDM1650TW');
-    </script>
-    <title>호로록</title>
-    <meta charset="utf-8">
-        </head>
+            gtag('config', 'G-JKDM1650TW');
+            </script>
+        <title>호로록</title>
+        <meta charset="utf-8">
+        <style>
+        .title{
+            font-size:14px;
+            font-weight:bold;
+        }
+        .stext {
+            font-size:12px;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 'a a'
+                                 'b c';
+            width: 1800px;
+            justify-content: center;
+            margin: auto;
+        }
+        .main {
+            grid-area: a;
+            text-align: center;
+        }
+        .category {
+            grid-area: b;
+        }
+        .text {
+            grid-area: c;
+        }
+        #item {
+            display: grid;
+            grid-template-columns: repeat(3,350px);
+        }
+        ol {
+            list-style-type:none;
+            line-height: 1.8;
+            padding-inline-start: 0em;
+        }
+        </style>
+    </head>
     <body>
-    <div style="text-align:center"><h1><a href="index.html"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><span class="material-symbols-outlined">
-        local_cafe
-        </span>호로록</a></h1></div>
-    <div style="text-align:center"><img src="홈페이지 메인.jpg" width="1800" height="600"></div>
-    <div style="margin-left:50px"><table>
-    <tr>
-        <td><div style="margin-right:50px"><h2>World coffee space</h2></div></td>
-        <td><h2>New</h2></td>
-    </tr>
-    <tr>
-        <td text-align="left" valign="top">
+    <div id="container">
+        <div class="main">
+            <h1><a href="index.html"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><span class="material-symbols-outlined">
+                local_cafe</span>호로록</a></h1>
+            <img src="홈페이지 메인.jpg" width="1800px" height="600px">
+        </div>
+        <div class="category">
+            <h2>World coffee space</h2>
             <ul>
-                <li><h4>Korea</h4></li><ol><li>창원</li><li>밀양</li></ol>
-            </ul>
-         </td>
-         <td><div style="margin-right:30px"><img src="얼스웨이브 메인.jpg" width="300px"><p><p style ="font-size:14px"><strong>지금은 다른 카페로 바뀌었지만,,</strong></p><p style="font-size:12px">얼스웨이브(현재)<br>☕창원 의창구 의안로22번길 9</p></p></div></td>
-         <td><div style="margin-right:30px"><a href="오키프.html"><img src="오키프0.jpg" width="300px"></a><p><p style ="font-size:14px"><strong>조용한 도시에 "힙"한 카페가 나타났다.</strong></p><p style="font-size:12px">오키프<br>☕밀양 가곡15안길 5-1</p></p></div></td>
-         <td><a href="도돌커피로스터스.html"><img src="도돌커피로스터스0.jpg" width="300px"></a><p><p style="font-size:14px"><strong>조용한 가로수길을 보며 커피 한 잔!</strong></p><p style="font-size:12px">도돌커피로스터스<br>☕창원 성산구 용호로122</p></p></td>
-    </tr>
-    </table></div>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/653618c8f2439e1631e74618/1hddl1khi';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
-</body>
+            <li><h4>Korea</h4></li>
+                <ol>
+                <li>창원</li>
+                <li>밀양</li>
+                </ol>
+            </ul>    
+        </div> 
+        <div class="text">
+            <h2>New</h2>
+            <div id="item">
+                <div class="item1">
+                <img src="얼스웨이브 메인.jpg" width="300px">
+                <p class="title">지금은 다른 카페로 바뀌었지만,,</p>
+                <p class="stext">얼스웨이브(현재)<br>☕창원 의창구 의안로22번길 9</p>
+                </div>
+                <div class="item2">
+                    <a href="오키프.html"><img src="오키프0.jpg" width="300px"></a>
+                    <p class="title">조용한 도시에 "힙"한 카페가 나타났다.</p>
+                    <p class="    stext">오키프<br>☕밀양 가곡15안길 5-1</p>
+                </div>
+                <div class="item3">
+                    <a href="도돌커피로스터스.html"><img src="도돌커피로스터스0.jpg" width="300px"></a>
+                    <p class="title">조용한 가로수길을 보며 커피 한 잔!</p>
+                    <p class="stext">도돌커피로스터스<br>☕창원 성산구 용호로122</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
 </html>
